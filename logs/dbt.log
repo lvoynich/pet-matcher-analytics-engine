@@ -516,3 +516,298 @@ SELECT * FROM final_analytics
 [0m17:53:47.622289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e919f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f6f5c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f109d0>]}
 [0m17:53:47.622446 [debug] [MainThread]: Flushing usage events
 [0m17:53:47.920890 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:33:23.853195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e217f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2774d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a277750>]}
+
+
+============================== 18:33:23.856136 | d07a865e-a36a-4131-acf2-4b7e418f0fb7 ==============================
+[0m18:33:23.856136 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:33:23.856417 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'target_path': 'None', 'empty': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'quiet': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'maximum_seed_size_mib': '1', 'version_check': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'hints_enabled': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'log_path': '/Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/logs', 'no_print': 'None', 'debug': 'False', 'profiles_dir': '/Users/lanavoynich/.dbt', 'static_parser': 'True', 'cache_selected_only': 'False'}
+[0m18:33:24.516510 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m18:33:24.516761 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m18:33:24.516882 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m18:33:24.605157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd07a865e-a36a-4131-acf2-4b7e418f0fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109146650>]}
+[0m18:33:24.625214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd07a865e-a36a-4131-acf2-4b7e418f0fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109764490>]}
+[0m18:33:24.625977 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m18:33:24.685958 [debug] [MainThread]: checksum: d60959d112beb8b2f36fb64f349f29ec37a8a8d5f0e40e1fe22d043f48b78f52, vars: {}, profile: default, target: dev, version: 1.12.3
+[0m18:33:24.736103 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m18:33:24.739242 [debug] [MainThread]: Partial parsing: added file: pet_matcher_analytics_engine://models/dim_school_catalogue.sql
+[0m18:33:24.821412 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.pet_matcher_analytics_engine.example
+[0m18:33:24.822726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd07a865e-a36a-4131-acf2-4b7e418f0fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef57d50>]}
+[0m18:33:24.856719 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/manifest.json
+[0m18:33:24.861611 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/semantic_manifest.json
+[0m18:33:24.873469 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/osi_document.json
+[0m18:33:24.879976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd07a865e-a36a-4131-acf2-4b7e418f0fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f09ef30>]}
+[0m18:33:24.880139 [info ] [MainThread]: Found 2 models, 545 macros
+[0m18:33:24.880261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd07a865e-a36a-4131-acf2-4b7e418f0fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f227070>]}
+[0m18:33:24.880949 [info ] [MainThread]: 
+[0m18:33:24.881082 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:33:24.881181 [info ] [MainThread]: 
+[0m18:33:24.881374 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m18:33:24.883598 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANCHOR_DB'
+[0m18:33:24.891776 [debug] [ThreadPool]: Using snowflake connection "list_ANCHOR_DB"
+[0m18:33:24.895073 [debug] [ThreadPool]: On list_ANCHOR_DB: show terse schemas in database ANCHOR_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_ANCHOR_DB"} */
+[0m18:33:24.895179 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:33:25.726640 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.831 seconds
+[0m18:33:25.732502 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ANCHOR_DB, now list_ANCHOR_DB_dbt_lvoynich)
+[0m18:33:25.750161 [debug] [ThreadPool]: Using snowflake connection "list_ANCHOR_DB_dbt_lvoynich"
+[0m18:33:25.751146 [debug] [ThreadPool]: On list_ANCHOR_DB_dbt_lvoynich: show objects in ANCHOR_DB.dbt_lvoynich
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_ANCHOR_DB_dbt_lvoynich"} */;
+[0m18:33:25.926448 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.175 seconds
+[0m18:33:25.939247 [debug] [ThreadPool]: Using snowflake connection "list_ANCHOR_DB_dbt_lvoynich"
+[0m18:33:25.939748 [debug] [ThreadPool]: On list_ANCHOR_DB_dbt_lvoynich: show user functions in ANCHOR_DB.dbt_lvoynich
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_ANCHOR_DB_dbt_lvoynich"} */
+[0m18:33:26.103840 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.164 seconds
+[0m18:33:26.107454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd07a865e-a36a-4131-acf2-4b7e418f0fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4e3380>]}
+[0m18:33:26.114426 [debug] [Thread-2 (]: Began running node model.pet_matcher_analytics_engine.dim_school_catalogue
+[0m18:33:26.114937 [debug] [Thread-3 (]: Began running node model.pet_matcher_analytics_engine.mart_engineer_details
+[0m18:33:26.117436 [info ] [Thread-2 (]: 1 of 2 START sql table model dbt_lvoynich.dim_school_catalogue ................. [RUN]
+[0m18:33:26.117948 [info ] [Thread-3 (]: 2 of 2 START sql table model dbt_lvoynich.mart_engineer_details ................ [RUN]
+[0m18:33:26.118413 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_ANCHOR_DB_dbt_lvoynich, now model.pet_matcher_analytics_engine.dim_school_catalogue)
+[0m18:33:26.118853 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.pet_matcher_analytics_engine.mart_engineer_details'
+[0m18:33:26.119159 [debug] [Thread-2 (]: Began compiling node model.pet_matcher_analytics_engine.dim_school_catalogue
+[0m18:33:26.119397 [debug] [Thread-3 (]: Began compiling node model.pet_matcher_analytics_engine.mart_engineer_details
+[0m18:33:26.124598 [debug] [Thread-2 (]: Writing injected SQL for node "model.pet_matcher_analytics_engine.dim_school_catalogue"
+[0m18:33:26.127166 [debug] [Thread-3 (]: Writing injected SQL for node "model.pet_matcher_analytics_engine.mart_engineer_details"
+[0m18:33:26.127946 [debug] [Thread-2 (]: Began executing node model.pet_matcher_analytics_engine.dim_school_catalogue
+[0m18:33:26.134268 [debug] [Thread-3 (]: Began executing node model.pet_matcher_analytics_engine.mart_engineer_details
+[0m18:33:26.155709 [debug] [Thread-3 (]: Writing runtime sql for node "model.pet_matcher_analytics_engine.mart_engineer_details"
+[0m18:33:26.156137 [debug] [Thread-2 (]: Writing runtime sql for node "model.pet_matcher_analytics_engine.dim_school_catalogue"
+[0m18:33:26.161009 [debug] [Thread-2 (]: Using snowflake connection "model.pet_matcher_analytics_engine.dim_school_catalogue"
+[0m18:33:26.161464 [debug] [Thread-3 (]: Using snowflake connection "model.pet_matcher_analytics_engine.mart_engineer_details"
+[0m18:33:26.161659 [debug] [Thread-2 (]: On model.pet_matcher_analytics_engine.dim_school_catalogue: create or replace transient table ANCHOR_DB.dbt_lvoynich.dim_school_catalogue
+    
+    
+    
+    
+    
+
+    as (
+
+-- Step 1: Staging our raw institutional data assets
+WITH staging_schools AS (
+    SELECT 'Oakridge Elementary' AS school_name, 'Primary' AS school_level, 450 AS student_count, 'Parents must sign out at the main office' AS pickup_policy
+    UNION ALL
+    SELECT 'Bayview High', 'High', 1200, NULL
+    UNION ALL
+    SELECT 'Sunset Middle', 'Middle', 680, NULL
+),
+
+-- Step 2: Transforming data using business logic (Your getters/setters equivalent)
+final_catalogue AS (
+    SELECT
+        MD5(school_name) AS school_integration_key,
+        school_name,
+        school_level,
+        student_count,
+        -- Handle data validation dynamically
+        CASE 
+            WHEN student_count >= 1000 THEN 'Large Tier'
+            WHEN student_count >= 500 THEN 'Medium Tier'
+            ELSE 'Small Tier'
+        END AS school_size_classification,
+        -- Coalesce missing attributes for high/middle schools
+        COALESCE(pickup_policy, 'No explicit primary pickup policy defined') AS operational_policy,
+        CURRENT_TIMESTAMP() AS record_loaded_at
+    FROM 
+        staging_schools
+)
+
+SELECT * FROM final_catalogue
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "default", "target_name": "dev", "node_id": "model.pet_matcher_analytics_engine.dim_school_catalogue"} */;
+[0m18:33:26.161860 [debug] [Thread-3 (]: On model.pet_matcher_analytics_engine.mart_engineer_details: create or replace transient table ANCHOR_DB.dbt_lvoynich.mart_engineer_details
+    
+    
+    
+    
+    
+
+    as (
+
+-- Clean and structure our core engineer staging logs
+WITH staging_data AS (
+    SELECT 
+        UPPER('Lana Voynich') AS engineer_name,
+        'Codecademy Data Engineer Track' AS core_foundation,
+        72 AS completion_percentage,
+        'dbt Core + Snowflake Key-Pair' AS cloud_infrastructure
+),
+
+-- Transform metrics to calculate our target outputs
+final_analytics AS (
+    SELECT 
+        engineer_name,
+        core_foundation,
+        completion_percentage,
+        (100 - completion_percentage) AS percentage_to_graduation,
+        cloud_infrastructure,
+        'Analytics Engineer' AS target_market_title
+    FROM 
+        staging_data
+)
+
+SELECT * FROM final_analytics
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "default", "target_name": "dev", "node_id": "model.pet_matcher_analytics_engine.mart_engineer_details"} */;
+[0m18:33:26.162240 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:33:27.535560 [debug] [Thread-2 (]: SQL status: SUCCESS 3 in 1.373 seconds
+[0m18:33:27.558514 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd07a865e-a36a-4131-acf2-4b7e418f0fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f5f0710>]}
+[0m18:33:27.559036 [info ] [Thread-2 (]: 1 of 2 OK created sql table model dbt_lvoynich.dim_school_catalogue ............ [[32mSUCCESS 3[0m in 1.44s]
+[0m18:33:27.559447 [debug] [Thread-2 (]: Finished running node model.pet_matcher_analytics_engine.dim_school_catalogue
+[0m18:33:27.741237 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.579 seconds
+[0m18:33:27.748387 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd07a865e-a36a-4131-acf2-4b7e418f0fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f5307e0>]}
+[0m18:33:27.751350 [info ] [Thread-3 (]: 2 of 2 OK created sql table model dbt_lvoynich.mart_engineer_details ........... [[32mSUCCESS 1[0m in 1.63s]
+[0m18:33:27.751820 [debug] [Thread-3 (]: Finished running node model.pet_matcher_analytics_engine.mart_engineer_details
+[0m18:33:27.753166 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:33:27.753479 [debug] [MainThread]: Connection 'model.pet_matcher_analytics_engine.dim_school_catalogue' was left open.
+[0m18:33:27.753722 [debug] [MainThread]: On model.pet_matcher_analytics_engine.dim_school_catalogue: Close
+[0m18:33:27.901081 [debug] [MainThread]: Connection 'model.pet_matcher_analytics_engine.mart_engineer_details' was left open.
+[0m18:33:27.902143 [debug] [MainThread]: On model.pet_matcher_analytics_engine.mart_engineer_details: Close
+[0m18:33:28.062961 [info ] [MainThread]: 
+[0m18:33:28.063893 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 3.18 seconds (3.18s).
+[0m18:33:28.065009 [debug] [MainThread]: Command end result
+[0m18:33:28.112021 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/manifest.json
+[0m18:33:28.117257 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/semantic_manifest.json
+[0m18:33:28.119113 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/osi_document.json
+[0m18:33:28.124326 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/run_results.json
+[0m18:33:28.124531 [info ] [MainThread]: 
+[0m18:33:28.124748 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:33:28.129922 [info ] [MainThread]: 
+[0m18:33:28.130124 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m18:33:28.134344 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.316805, "process_in_blocks": "0", "process_kernel_time": 0.238596, "process_mem_max_rss": "229457920", "process_out_blocks": "0", "process_user_time": 1.420481}
+[0m18:33:28.134717 [debug] [MainThread]: Command `dbt run` succeeded at 18:33:28.134659 after 4.32 seconds
+[0m18:33:28.134947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a31e7b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4ba0f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f40f550>]}
+[0m18:33:28.135160 [debug] [MainThread]: Flushing usage events
+[0m18:33:28.471904 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:33:55.307661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9f17f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10be474d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10be47750>]}
+
+
+============================== 18:33:55.311131 | 641299a7-e339-4b71-afda-67a5a5eb8286 ==============================
+[0m18:33:55.311131 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:33:55.311371 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/lanavoynich/.dbt', 'write_json': 'True', 'version_check': 'True', 'invocation_command': 'dbt run --select dim_school_catalogue', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/logs', 'warn_error': 'None', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'debug': 'False', 'hints_enabled': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'maximum_seed_size_mib': '1', 'fail_fast': 'False', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'no_print': 'None', 'target_path': 'None', 'quiet': 'False'}
+[0m18:33:55.760009 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m18:33:55.760248 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m18:33:55.760364 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m18:33:55.842037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '641299a7-e339-4b71-afda-67a5a5eb8286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad16650>]}
+[0m18:33:55.860463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '641299a7-e339-4b71-afda-67a5a5eb8286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b330490>]}
+[0m18:33:55.861000 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m18:33:55.912457 [debug] [MainThread]: checksum: d60959d112beb8b2f36fb64f349f29ec37a8a8d5f0e40e1fe22d043f48b78f52, vars: {}, profile: default, target: dev, version: 1.12.3
+[0m18:33:55.954692 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:33:55.954867 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:33:55.954962 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:33:55.956979 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.pet_matcher_analytics_engine.example
+[0m18:33:55.958616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '641299a7-e339-4b71-afda-67a5a5eb8286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110b60350>]}
+[0m18:33:55.995191 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/manifest.json
+[0m18:33:55.996698 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/semantic_manifest.json
+[0m18:33:56.005634 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/osi_document.json
+[0m18:33:56.010047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '641299a7-e339-4b71-afda-67a5a5eb8286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c3a210>]}
+[0m18:33:56.010218 [info ] [MainThread]: Found 2 models, 545 macros
+[0m18:33:56.010338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '641299a7-e339-4b71-afda-67a5a5eb8286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110dceb30>]}
+[0m18:33:56.010921 [info ] [MainThread]: 
+[0m18:33:56.011038 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:33:56.011130 [info ] [MainThread]: 
+[0m18:33:56.011326 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m18:33:56.011646 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANCHOR_DB'
+[0m18:33:56.017122 [debug] [ThreadPool]: Using snowflake connection "list_ANCHOR_DB"
+[0m18:33:56.017257 [debug] [ThreadPool]: On list_ANCHOR_DB: show terse schemas in database ANCHOR_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_ANCHOR_DB"} */
+[0m18:33:56.017355 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:33:56.899362 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.882 seconds
+[0m18:33:56.906609 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ANCHOR_DB, now list_ANCHOR_DB_dbt_lvoynich)
+[0m18:33:56.914561 [debug] [ThreadPool]: Using snowflake connection "list_ANCHOR_DB_dbt_lvoynich"
+[0m18:33:56.914782 [debug] [ThreadPool]: On list_ANCHOR_DB_dbt_lvoynich: show objects in ANCHOR_DB.dbt_lvoynich
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_ANCHOR_DB_dbt_lvoynich"} */;
+[0m18:33:57.079262 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.164 seconds
+[0m18:33:57.086727 [debug] [ThreadPool]: Using snowflake connection "list_ANCHOR_DB_dbt_lvoynich"
+[0m18:33:57.087221 [debug] [ThreadPool]: On list_ANCHOR_DB_dbt_lvoynich: show user functions in ANCHOR_DB.dbt_lvoynich
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_ANCHOR_DB_dbt_lvoynich"} */
+[0m18:33:57.207509 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.120 seconds
+[0m18:33:57.209028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '641299a7-e339-4b71-afda-67a5a5eb8286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110ec7860>]}
+[0m18:33:57.210815 [debug] [Thread-2 (]: Began running node model.pet_matcher_analytics_engine.dim_school_catalogue
+[0m18:33:57.211097 [info ] [Thread-2 (]: 1 of 1 START sql table model dbt_lvoynich.dim_school_catalogue ................. [RUN]
+[0m18:33:57.211345 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_ANCHOR_DB_dbt_lvoynich, now model.pet_matcher_analytics_engine.dim_school_catalogue)
+[0m18:33:57.211511 [debug] [Thread-2 (]: Began compiling node model.pet_matcher_analytics_engine.dim_school_catalogue
+[0m18:33:57.214576 [debug] [Thread-2 (]: Writing injected SQL for node "model.pet_matcher_analytics_engine.dim_school_catalogue"
+[0m18:33:57.214987 [debug] [Thread-2 (]: Began executing node model.pet_matcher_analytics_engine.dim_school_catalogue
+[0m18:33:57.230505 [debug] [Thread-2 (]: Writing runtime sql for node "model.pet_matcher_analytics_engine.dim_school_catalogue"
+[0m18:33:57.231319 [debug] [Thread-2 (]: Using snowflake connection "model.pet_matcher_analytics_engine.dim_school_catalogue"
+[0m18:33:57.231508 [debug] [Thread-2 (]: On model.pet_matcher_analytics_engine.dim_school_catalogue: create or replace transient table ANCHOR_DB.dbt_lvoynich.dim_school_catalogue
+    
+    
+    
+    
+    
+
+    as (
+
+-- Step 1: Staging our raw institutional data assets
+WITH staging_schools AS (
+    SELECT 'Oakridge Elementary' AS school_name, 'Primary' AS school_level, 450 AS student_count, 'Parents must sign out at the main office' AS pickup_policy
+    UNION ALL
+    SELECT 'Bayview High', 'High', 1200, NULL
+    UNION ALL
+    SELECT 'Sunset Middle', 'Middle', 680, NULL
+),
+
+-- Step 2: Transforming data using business logic (Your getters/setters equivalent)
+final_catalogue AS (
+    SELECT
+        MD5(school_name) AS school_integration_key,
+        school_name,
+        school_level,
+        student_count,
+        -- Handle data validation dynamically
+        CASE 
+            WHEN student_count >= 1000 THEN 'Large Tier'
+            WHEN student_count >= 500 THEN 'Medium Tier'
+            ELSE 'Small Tier'
+        END AS school_size_classification,
+        -- Coalesce missing attributes for high/middle schools
+        COALESCE(pickup_policy, 'No explicit primary pickup policy defined') AS operational_policy,
+        CURRENT_TIMESTAMP() AS record_loaded_at
+    FROM 
+        staging_schools
+)
+
+SELECT * FROM final_catalogue
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "default", "target_name": "dev", "node_id": "model.pet_matcher_analytics_engine.dim_school_catalogue"} */;
+[0m18:33:58.153514 [debug] [Thread-2 (]: SQL status: SUCCESS 3 in 0.921 seconds
+[0m18:33:58.172621 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '641299a7-e339-4b71-afda-67a5a5eb8286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e93350>]}
+[0m18:33:58.173003 [info ] [Thread-2 (]: 1 of 1 OK created sql table model dbt_lvoynich.dim_school_catalogue ............ [[32mSUCCESS 3[0m in 0.96s]
+[0m18:33:58.173313 [debug] [Thread-2 (]: Finished running node model.pet_matcher_analytics_engine.dim_school_catalogue
+[0m18:33:58.174061 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:33:58.174251 [debug] [MainThread]: Connection 'model.pet_matcher_analytics_engine.dim_school_catalogue' was left open.
+[0m18:33:58.174398 [debug] [MainThread]: On model.pet_matcher_analytics_engine.dim_school_catalogue: Close
+[0m18:33:58.341205 [info ] [MainThread]: 
+[0m18:33:58.341543 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.33 seconds (2.33s).
+[0m18:33:58.341990 [debug] [MainThread]: Command end result
+[0m18:33:58.362742 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/manifest.json
+[0m18:33:58.364392 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/semantic_manifest.json
+[0m18:33:58.365679 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/osi_document.json
+[0m18:33:58.368979 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/lanavoynich/Desktop/data-ingestion-pipeline/dog project/pet-matcher-analytics-engine/target/run_results.json
+[0m18:33:58.369122 [info ] [MainThread]: 
+[0m18:33:58.369296 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:33:58.369417 [info ] [MainThread]: 
+[0m18:33:58.369554 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m18:33:58.372460 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.0992901, "process_in_blocks": "0", "process_kernel_time": 0.229497, "process_mem_max_rss": "221970432", "process_out_blocks": "0", "process_user_time": 1.177144}
+[0m18:33:58.372717 [debug] [MainThread]: Command `dbt run` succeeded at 18:33:58.372675 after 3.10 seconds
+[0m18:33:58.372876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11803f8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110dfa8f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110dfa990>]}
+[0m18:33:58.373023 [debug] [MainThread]: Flushing usage events
+[0m18:33:58.651309 [debug] [MainThread]: An error was encountered while trying to flush usage events
