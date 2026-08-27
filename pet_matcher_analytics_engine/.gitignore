@@ -1,5 +1,16 @@
+# Explicitly block all private and public security token certificates
+*.pem
+*.pub
+*.key
 
-target/
-dbt_packages/
-logs/
-.env
+# Block all local sqlite operational database tables
+*.db
+*.sqlite
+
+# Block local software system logs and internal caching folders
+/target/
+/dbt_packages/
+/logs/
+/dbt_modules/
+.DS_Store
+__pycache__/
