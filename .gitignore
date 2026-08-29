@@ -23,6 +23,7 @@ target/
 dbt_packages/
 logs/
 dbt_modules/
+modules/
 *.log
 
 # ====================================================================
@@ -43,3 +44,11 @@ venv/
 # ====================================================================
 # Blocks invisible Mac system folder indexing files
 .DS_Store
+.vscode/
+
+# ====================================================================
+# DATA STORAGE FILES
+# ====================================================================
+# Blocks local data storage files from being tracked by the repository
+*.csv
+*.json
